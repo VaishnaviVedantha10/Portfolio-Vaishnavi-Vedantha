@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <title>👩‍💻 Vaishnavi Vedantha | Contact</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="overlay" onclick="closeMenu()"></div>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo" onclick="window.location.href='index.html'">
+                Vaishnavi <span>Vedantha</span>
+            </div>
+
+            <div class="hamburger" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="about.html" onclick="closeMenu()">About Me</a></li>
+                <li><a href="project.html" onclick="closeMenu()">Projects</a></li>
+                <li><a href="experience.html" onclick="closeMenu()">Experience</a></li>
+                <li><a href="certification.html" onclick="closeMenu()">Certifications</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="about-hero hero">
+
+        <!-- Background Shapes -->
+        <div class="shape-circle"></div>
+        <div class="shape-circle-2"></div>
+        <div class="shape-circle-3"></div>
+
+        <div class="about-content fade-in">
+
+            <!-- Title -->
+            <div class="heading-photo-wrapper">
+                <h1>Let's Connect</h1>
+                <hr>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="about-text">
+                <h3><strong>Location</strong></h3>
+                <p>Bengaluru, Karnataka, India</p>
+
+                <h3><strong>Email</strong></h3>
+                <p class="contact-email">vaishnavivedanha18@gmail.com</p>
+
+                <h3><strong>Connect With Me</strong></h3>
+                <p>Reach out anytime — I’d love to hear from you!</p>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/vaishnavi-vedantha-a0b5a41b3/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/VaishnaviVedantha10?tab=repositories" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- Contact Form Card -->
+            <div class="contact-form fade-in">
+
+                <h2 class="form-title">Send Me a Message</h2>
+
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+                    <!-- REQUIRED HIDDEN KEY -->
+                    <input type="hidden" name="access_key" value="a7c8399c-4810-41e2-8ca9-dcd2e6960b0d">
+
+                    <input type="text" name="name" placeholder="Your Name" required class="input-field">
+                    <input type="email" name="email" placeholder="Your Email" required class="input-field">
+                    <textarea rows="4" name="message" placeholder="Your Message" required class="input-field"></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="popup-message">
+        Message Sent Successfully!
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Vaishnavi Vedantha · All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function openMenu() {
+            document.querySelector(".nav-links").classList.add("active");
+            document.querySelector(".overlay").classList.add("show");
+        }
+
+        function closeMenu() {
+            document.querySelector(".nav-links").classList.remove("active");
+            document.querySelector(".overlay").classList.remove("show");
+        }
+
+        // Web3Forms Submission Handler
+        const form = document.getElementById("contactForm");
+        const popup = document.getElementById("successPopup");
+
+        form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                popup.classList.add("show");
+
+                setTimeout(() => {
+                    popup.classList.remove("show");
+                }, 2000);
+
+                form.reset();
+            } else {
+                alert("❌ Failed to send message. Try again.");
+            }
+        });
+    </script>
+
+</body>
+</html>

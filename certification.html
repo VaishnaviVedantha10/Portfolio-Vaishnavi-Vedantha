@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <title>👩‍💻 Vaishnavi Vedantha | Certifications</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="overlay" onclick="closeMenu()"></div>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo" onclick="window.location.href='index.html'">
+                Vaishnavi <span>Vedantha</span>
+            </div>
+
+            <div class="hamburger" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="about.html" onclick="closeMenu()">About Me</a></li>
+                <li><a href="project.html" onclick="closeMenu()">Projects</a></li>
+                <li><a href="experience.html" onclick="closeMenu()">Experience</a></li>
+                <li><a href="certification.html" onclick="closeMenu()">Certifications</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="certificates-hero hero">
+
+        <div class="shape-circle"></div>
+        <div class="shape-circle-2"></div>
+        <div class="shape-circle-3"></div>
+
+
+        <div class="heading-photo-wrapper fade-in">
+            <h1>Certifications</h1>
+            <hr>
+        </div>
+
+        <div class="certificates-container fade-in">
+
+            <!-- Certification 1 -->
+            <div class="cert-card fade-in delay-1">
+                <img src="certificates/Reactjs.jpg" alt="ReactJS Certification" class="cert-logo">
+                <div class="cert-info">
+                    <h3>ReactJS Tutorial Course</h3>
+                    <p><strong>Issued by:</strong> Great Learning</p>
+                    <p><strong>Date:</strong> March 2024</p>
+                    <a href="certificates/GL Reactjs.pdf" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Certification 2 -->
+            <div class="cert-card fade-in delay-2">
+                <img src="certificates/Reactjs1.png" alt="ReactJS Certification" class="cert-logo">
+                <div class="cert-info">
+                    <h3>ReactJS for Beginners</h3>
+                    <p><strong>Issued by:</strong> Simplilearn</p>
+                    <p><strong>Date:</strong> April 2024</p>
+                    <a href="certificates/ReactJS.pdf" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Certification 3 -->
+            <div class="cert-card fade-in delay-3">
+                <img src="certificates/html.png" alt="Frontend Certification" class="cert-logo">
+                <div class="cert-info">
+                    <h3>Frontend Development (HTML)</h3>
+                    <p><strong>Issued by:</strong> Great Learning</p>
+                    <p><strong>Date:</strong> Sept 2021</p>
+                    <a href="certificates/Vaishnavi Vedantha (1).pdf" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Certification 4 -->
+            <div class="cert-card fade-in delay-4">
+                <img src="certificates/SQL.png" alt="SQL Certification" class="cert-logo">
+                <div class="cert-info">
+                    <h3>SQL for Beginners: MySQL & Database Design</h3>
+                    <p><strong>Issued by:</strong> Scaler</p>
+                    <p><strong>Date:</strong> March 2024</p>
+                    <a href="certificates/MySQL scaler.pdf" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Certification 5 -->
+            <div class="cert-card fade-in delay-5">
+                <img src="certificates/cloud.jpg" alt="Cloud Certification" class="cert-logo">
+                <div class="cert-info">
+                    <h3>AWS Fundamentals: Going Cloud-Native</h3>
+                    <p><strong>Issued by:</strong> Coursera</p>
+                    <p><strong>Date:</strong> Jul 2020</p>
+                    <a href="certificates/Coursera AWS cloud.pdf" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Certification 6 -->
+            <div class="cert-card fade-in delay-6">
+                <img src="certificates/software .jpg" alt="Software Engineering Certification" class="cert-logo">
+                <div class="cert-info">
+                    <h3>Introduction to Software Engineering</h3>
+                    <p><strong>Issued by:</strong> Coursera</p>
+                    <p><strong>Date:</strong> March 2025</p>
+                    <a href="certificates/Coursera E5BQMC5KIYXG.pdf" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Certification 7 -->
+            <div class="cert-card fade-in delay-7">
+                <img src="certificates/ibm cloud.jpg" alt="Cloud Computing Certification" class="cert-logo">
+                <div class="cert-info">
+                    <h3>Introduction to Cloud Computing</h3>
+                    <p><strong>Issued by:</strong> Coursera</p>
+                    <p><strong>Date:</strong> April 2024</p>
+                    <a href="certificates/Coursera 1MAU2UB87GXZ.pdf" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Vaishnavi Vedantha · All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function openMenu() {
+            document.querySelector(".nav-links").classList.add("active");
+            document.querySelector(".overlay").classList.add("show");
+        }
+
+        function closeMenu() {
+            document.querySelector(".nav-links").classList.remove("active");
+            document.querySelector(".overlay").classList.remove("show");
+        }
+    </script>
+
+</body>
+</html>

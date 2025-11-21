@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <title>👩‍💻 Vaishnavi Vedantha | About</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="overlay" onclick="closeMenu()"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo" onclick="window.location.href='index.html'">Vaishnavi <span>Vedantha</span></div>
+            <div class="hamburger" onclick="openMenu()"><i class="fas fa-bars"></i></div>
+
+            <ul class="nav-links">
+                <li><a href="about.html" onclick="closeMenu()">About Me</a></li>
+                <li><a href="project.html" onclick="closeMenu()">Projects</a></li>
+                <li><a href="experience.html" onclick="closeMenu()">Experience</a></li>
+                <li><a href="certification.html" onclick="closeMenu()">Certifications</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ABOUT PAGE -->
+   <section class="about-hero hero">
+
+    <!-- Background Shapes -->
+    <div class="shape-circle"></div>
+    <div class="shape-circle-2"></div>
+    <div class="shape-circle-3"></div>
+
+    <!-- Everything inside one container -->
+    <div class="about-content fade-in">
+
+        <!-- Heading -->
+        <div class="heading-photo-wrapper">
+            <h1>About Me</h1>
+            <hr>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="about-photo">
+            <img src="Vaishnavi.jpeg" alt="Vaishnavi Vedantha">
+        </div>
+
+        <!-- TEXT -->
+        <div class="about-text">
+            <p>👋 Hi there!</p>
+
+            <p>I’m <strong>Vaishnavi</strong>. I believe in learning by building — diving into projects to understand things deeply, and approaching challenges with a practical mindset rather than just following tutorials.</p>
+
+            <p>I enjoy collaborating with teams where ideas grow and improve together, and I embrace challenges as opportunities to learn something new.</p>
+
+            <p>Outside of coding, I love cooking 🍽️, reading books 📚, and gardening 🌱, which keep me balanced and inspired.</p>
+
+            <p>My core tech stack is <strong>ReactJS, NodeJS, MySQL</strong>, and I’m passionate about exploring modern web technologies to create projects that are both functional and visually appealing.</p>
+
+            <p>I’m always excited to learn, build, and contribute — every project is a chance to grow.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <footer>
+        <p>© 2025 Vaishnavi Vedantha · All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function openMenu() {
+            document.querySelector(".nav-links").classList.add("active");
+            document.querySelector(".overlay").classList.add("show");
+        }
+
+        function closeMenu() {
+            document.querySelector(".nav-links").classList.remove("active");
+            document.querySelector(".overlay").classList.remove("show");
+        }
+    </script>
+
+</body>
+</html>

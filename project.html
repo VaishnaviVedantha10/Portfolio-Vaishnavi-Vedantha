@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <title>👩‍💻 Vaishnavi Vedantha | Projects</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="overlay" onclick="closeMenu()"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo" onclick="window.location.href='index.html'">
+                Vaishnavi <span>Vedantha</span>
+            </div>
+            <div class="hamburger" onclick="openMenu()"><i class="fas fa-bars"></i></div>
+
+            <ul class="nav-links">
+                <li><a href="about.html" onclick="closeMenu()">About Me</a></li>
+                <li><a href="project.html" onclick="closeMenu()">Projects</a></li>
+                <li><a href="experience.html" onclick="closeMenu()">Experience</a></li>
+                <li><a href="certification.html" onclick="closeMenu()">Certifications</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="projects-hero hero">
+
+        <!-- Background Shapes -->
+        <div class="shape-circle"></div>
+        <div class="shape-circle-2"></div>
+        <div class="shape-circle-3"></div>
+
+        <!-- Heading -->
+        <div class="hero-text fade-in heading-photo-wrapper">
+            <h1>Projects</h1>
+            <hr>
+        </div>
+
+
+        <!-- PERSONAL PROJECTS -->
+        <div class="projects-container fade-in">
+            <h2 class="teal-heading">Personal Projects</h2>
+
+            <!-- PERSONAL PROJECT 1 -->
+            <div class="project-card project-flex fade-in delay-1">
+                <div class="project-image">
+                    <img src="portfolio.jpg" alt="Portfolio Website Screenshot">
+                </div>
+
+                <div class="project-info">
+                    <h3>📌 Personal Portfolio Website</h3>
+                    <p>A fully responsive portfolio showcasing my skills, projects, work experience and certifications.</p>
+
+                         <div class="tech-badges">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                            <ul class="features">
+                                <li>Responsive UI & animations</li>
+                                <li>Fully modular structure</li>
+                                <li>Optimized for performance</li>
+                            </ul>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/VaishnaviVedantha10/Portfolio-Vaishnavi-Vedantha" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <hr class="fade-in delay-5">
+
+
+        <!-- WORK PROJECTS -->
+        <div class="projects-container fade-in">
+            <h2 class="teal-heading">Work Projects</h2>
+
+            <!-- WORK PROJECT 1 -->
+            <div class="project-card project-flex">
+                <div class="project-info">
+                    <h3>📌 Student & Faculty Attendance System</h3>
+                    <p><strong>Tech Stack:</strong> ReactJS, NodeJS, MySQL</p>
+                    <p>A QR-based attendance system where students scan codes and faculty can view real-time subject-wise analytics.</p>
+
+                    <ul class="features">
+                        <li>Reusable backend architecture</li>
+                        <li>Role-based dashboards</li>
+                        <li>Optimized database structure</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="experience.html" class="btn outline">View Responsibilities</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORK PROJECT 2 -->
+            <div class="project-card project-flex">
+                <div class="project-info">
+                    <h3>📌 Faculty Recruitment Application</h3>
+                    <p><strong>Tech Stack:</strong> ReactJS, NodeJS, MySQL</p>
+                    <p>An end-to-end recruitment platform for applicant submissions, reviewer evaluation, and admin control.</p>
+
+                    <ul class="features">
+                        <li>Three-tier modular architecture</li>
+                        <li>Secure multi-role login</li>
+                        <li>Clean and structured backend APIs</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="experience.html" class="btn outline">View Responsibilities</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORK PROJECT 3 -->
+            <div class="project-card project-flex">
+                <div class="project-info">
+                    <h3>📌 HDFC Bank – Network Operations</h3>
+                    <p><strong>Tools:</strong> Xshell, ITSM, Excel</p>
+                    <p>Monitored multi-branch network uptime and resolved connectivity issues across routers and infra devices.</p>
+
+                    <ul class="features">
+                        <li>Router troubleshooting via Xshell</li>
+                        <li>Outage tracking using ITSM</li>
+                        <li>Coordination with branch teams</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="experience.html" class="btn outline">View Responsibilities</a>
+                    </div>
+                </div>
+            </div>
+
+           <!-- WORK PROJECT 4 -->
+            <div class="project-card project-flex">
+                <div class="project-info">
+                    <h3>📌 MCN Operations – Network Troubleshooting</h3>
+                    <p><strong>Tools:</strong> Xshell, ITSM, Cisco vManage, Cisco Meraki, XTAM, Excel</p>
+                    <p>Monitored multi-branch network uptime and resolved connectivity issues across routers and infra devices.</p>
+                    <ul class="features">
+                        <li>Checked router & device status via Cisco vManage</li>
+                         <li>Tracked & updated issues in ITSM</li>
+                        <li>Monitored network via Cisco Meraki & coordinated with teams</li>
+                    </ul>
+                        <div class="project-actions">
+                            <a href="experience.html" class="btn outline">View Responsibilities</a>
+                        </div>
+                 </div>
+            </div>
+
+
+
+        </div>
+
+
+        <hr class="fade-in delay-7">
+
+
+        <!-- ACADEMIC PROJECTS -->
+        <div class="projects-container fade-in delay-8">
+            <h2 class="teal-heading">Academic Projects</h2>
+
+            <!-- ACADEMIC PROJECT 1 -->
+            <div class="project-card project-flex">
+                <div class="project-image">
+                    <img src="rpa.jpg" alt="Academic Project Screenshot">
+                </div>
+                <div class="project-info">
+                    <h3>📌 RPA for Result Analysis (UiPath)</h3>
+                    <p><strong>Tech:</strong> UiPath, Excel, VB, C#</p>
+                    <p>Automated the extraction, processing, and generation of student result reports using RPA workflows.</p>
+
+                    <ul class="features">
+                        <li>End-to-end data automation</li>
+                        <li>Error-free report generation</li>
+                        <li>Workflow-based orchestration</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/VaishnaviVedantha10/RPA-for-Result-Analysis-UiPath" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACADEMIC PROJECT 2 -->
+            <div class="project-card project-flex">
+                <div class="project-image">
+                    <img src="dbms.jpg" alt="Academic Project Screenshot">
+                </div>
+                <div class="project-info">
+                    <h3>📌 Food Grain Delivery System</h3>
+                    <p><strong>Tech:</strong> C#, MySQL, DBMS</p>
+                    <p>An e-commerce model enabling order placement, stock tracking, and delivery management.</p>
+
+                    <ul class="features">
+                        <li>Inventory + delivery workflow</li>
+                        <li>Secure database design</li>
+                        <li>User-friendly interface</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/VaishnaviVedantha10/Food-Grain-Delivery-System" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACADEMIC PROJECT 3 -->
+            <div class="project-card project-flex">
+                <div class="project-image">
+                    <img src="dramaflex.jpg" alt="Academic Project Screenshot">
+                </div>
+                <div class="project-info">
+                    <h3>📌 DRAMAFLEX – Movie Ticket Booking</h3>
+                    <p><strong>Tech:</strong> Java, SQLite, Android Studio</p>
+                    <p>Mobile app enabling movie selection, seat booking, and payment simulation.</p>
+
+                    <ul class="features">
+                        <li>Interactive UI</li>
+                        <li>Seat matrix mapping</li>
+                        <li>Local DB storage</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/VaishnaviVedantha10/DRAMAFLEX-Movie-Ticket-Booking" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACADEMIC PROJECT 4 -->
+            <div class="project-card project-flex">
+                <div class="project-image">
+                    <img src="earring.jpg" alt="Academic Project Screenshot">
+                </div>
+                <div class="project-info">
+                    <h3>📌 E-Commerce Website (Earrings)</h3>
+                    <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                    <p>A clean and stylish frontend for browsing and viewing products with smooth navigation.</p>
+
+                    <ul class="features">
+                        <li>Responsive product layout</li>
+                        <li>Interactive UI elements</li>
+                        <li>Optimized user flow</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/VaishnaviVedantha10/E-Commerce-Website-Earrings" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>© 2025 Vaishnavi Vedantha · All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function openMenu() {
+            document.querySelector(".nav-links").classList.add("active");
+            document.querySelector(".overlay").classList.add("show");
+        }
+        function closeMenu() {
+            document.querySelector(".nav-links").classList.remove("active");
+            document.querySelector(".overlay").classList.remove("show");
+        }
+    </script>
+
+</body>
+</html>

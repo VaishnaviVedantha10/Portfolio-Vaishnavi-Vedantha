@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <title>👩‍💻 Vaishnavi Vedantha | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="overlay" onclick="closeMenu()"></div>
+
+<header>
+    <nav class="navbar">
+        <div class="logo" onclick="window.location.href='index.html'">Vaishnavi <span>Vedantha</span></div>
+        <div class="hamburger" onclick="openMenu()"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="about.html" onclick="closeMenu()">About Me</a></li>
+            <li><a href="project.html" onclick="closeMenu()">Projects</a></li>
+            <li><a href="experience.html" onclick="closeMenu()">Experience</a></li>
+            <li><a href="certification.html" onclick="closeMenu()">Certifications</a></li>
+            <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="index-hero hero">
+    <div class="shape-circle"></div>
+    <div class="shape-circle-2"></div>
+    <div class="shape-circle-3"></div>
+
+    <div class="hero-text fade-in">
+        <h1>Hello, I'm <span class="gold">Vaishnavi Vedantha</span></h1>
+        <p class="tagline">Passionate about UI, problem-solving & modern web tech.</p>
+        <p class="skills-line">ReactJS · NodeJS · JavaScript · MySQL · HTML · CSS</p>
+
+        <div class="buttons">
+            <a class="primary-btn" href="project.html">View My Projects</a>
+            <a class="secondary-btn" href="Vaishnavi_Vedantha_Resume.pdf" download>Download Resume</a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/VaishnaviVedantha10?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vaishnavi-vedantha-a0b5a41b3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:vaishnavivedantha18@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Vaishnavi Vedantha · All Rights Reserved.</p>
+</footer>
+
+<script>
+    function openMenu() {
+        document.querySelector(".nav-links").classList.add("active");
+        document.querySelector(".overlay").classList.add("show");
+    }
+    function closeMenu() {
+        document.querySelector(".nav-links").classList.remove("active");
+        document.querySelector(".overlay").classList.remove("show");
+    }
+</script>
+</body>
+</html>
